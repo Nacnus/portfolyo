@@ -1,0 +1,20 @@
+.header{
+    width: 100%;
+    background-color: #e6790d;
+    height: 5vh;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-text{
+    margin-left:5px;
+}
+.right-buttons{
+    margin-right:5px;
+}
+.MuiButton-containedSizeSmall{
+    padding:0px;
+    color:grey;
+}
