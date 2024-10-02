@@ -1,7 +1,7 @@
 .header{
     width: 100%;
     background-color: #e6790d;
-    height: 5vh;
+    height: 45px;
     color:white;
     display: flex;
     flex-direction: row;
@@ -9,12 +9,11 @@
     align-items: center;
 }
 .left-text{
-    margin-left:5px;
+    margin-left:10px;
+    font-size:20px;
+    font-weight: 500;
 }
 .right-buttons{
-    margin-right:5px;
+    margin-right:10px;
 }
-.MuiButton-containedSizeSmall{
-    padding:0px;
-    color:grey;
-}
+
