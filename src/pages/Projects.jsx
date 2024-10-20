@@ -2,7 +2,7 @@ import React from 'react';
 
 function Projects() {
     return (
-        <div>
+        <div id='projects'>
             2. Projelerim (Projects Section)
             Bu kısmı şablon olarak bırakıyoruz, sen projelerini eklediğinde doldurabilirsin:
 
