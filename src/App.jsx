@@ -1,8 +1,13 @@
-import { useState } from 'react'
 import './App.css'
 import Header from "./components/Header.jsx";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import RouterConfig from "./config/RouterConfig.jsx";
+import Home from "./pages/Home.jsx";
+import Projects from "./pages/Projects.jsx";
+import Contact from "./pages/Contact.jsx";
+import Cv from "./pages/Cv.jsx";
+import MyCarousels from "./carousel/MyCarousels.jsx";
+import PageContainer from "./container/PageContainer.jsx";
+import MyTypeWriters from "./typeWriters/MyTypeWriters.jsx";
 
 const theme = createTheme({
     palette: {
@@ -15,7 +20,13 @@ function App() {
   return (
       <ThemeProvider theme={theme}>
           <Header/>
-          <RouterConfig/>
+          <PageContainer className="content">
+              <Home/>
+              <MyCarousels/>
+              <Contact/>
+              <Cv/>
+          </PageContainer>
+          <MyTypeWriters/>
       </ThemeProvider>
 
   )
