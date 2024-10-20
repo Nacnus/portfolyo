@@ -1,49 +1,55 @@
-import '../css/Header.css';
-import {Button} from "@mui/material";
-
+import React, { useState } from 'react';
+import { Container, Tabs, Tab } from "@mui/material";
+import '../css/Header.css';  // Stil dosyanı koruyoruz
 
 function Header() {
+    const [value, setValue] = useState(0); // Aktif sekmeyi kontrol eden state
 
     const headers = [
         {
-            to: '/',
+            section: 'home',
             title: 'Ana Sayfa'
         },
         {
-            to: '/projects',
+            section: 'projects',
             title: 'Projeler'
         },
         {
-            to: '/contact',
+            section: 'contact',
             title: 'İletişim'
         },
         {
-            to: '#cv',
+            section: 'cv',
             title: 'CV'
         },
-    ]
+    ];
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);  // Aktif sekme değiştiğinde state güncellenir
+    };
 
     return (
         <div className='header'>
-            <div className='left-text'>Yusuf Can Sun</div>
-            <div className='right-buttons'>
-                {
-                    headers.map(header => {
-                        return <Button
-                            variant="contained"
-                            disableElevation
-                            className='button-styles'
-                            size="small"
-                            color='secondary'
-                            style={{marginLeft: 5 + 'px'}}
-                            key={header.id}
-                            href={header.to}
-                        >
-                            {header.title}
-                        </Button>
-                    })
-                }
-            </div>
+            <Container maxWidth="lg" sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between',alignItems: 'center' }}>
+                <div className='left-text'>Yusuf Can Sun</div>
+                <div>
+                    <Tabs
+                        value={value}
+                        onChange={handleChange}
+                        textColor="inherit"
+                        indicatorColor="secondary"
+
+                    >
+                        {headers.map((header) => (
+                            <Tab
+                                key={header.section}
+                                label={header.title}
+                                href={'#' + header.section}  // Anchor link
+                            />
+                        ))}
+                    </Tabs>
+                </div>
+            </Container>
         </div>
     );
 }
