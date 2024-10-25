@@ -25,7 +25,7 @@ function Header() {
     ];
 
     const handleChange = (event, newValue) => {
-        setValue(newValue);  // Aktif sekme değiştiğinde state güncellenir
+        setValue(newValue);
     };
 
     return (
@@ -44,7 +44,7 @@ function Header() {
                             <Tab
                                 key={header.section}
                                 label={header.title}
-                                href={'#' + header.section}  // Anchor link
+                                href={`#${header.section}`}
                             />
                         ))}
                     </Tabs>
