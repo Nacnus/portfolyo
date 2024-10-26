@@ -5,7 +5,7 @@ import {Typewriter} from "react-simple-typewriter";
 function MyTypeWriters() {
     const titles=[
         'Yusuf Can Sun',
-        'Front-end Developer'
+        'Front-end Developer\'ım'
     ]
     return (
         <>
