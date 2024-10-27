@@ -3,9 +3,9 @@ import Header from "./components/Header.jsx";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Home from "./components/Home.jsx";
 import Contact from "./components/Contact.jsx";
-import Cv from "./components/Cv.jsx";
 import MyCarousels from "./carousel/MyCarousels.jsx";
 import PageContainer from "./container/PageContainer.jsx";
+import AboutMe from "./components/AboutMe.jsx";
 
 const theme = createTheme({
     palette: {
@@ -23,9 +23,9 @@ function App() {
           <Header/>
           <Home/>
           <PageContainer className="content">
+              <AboutMe/>
               <MyCarousels/>
               <Contact/>
-              <Cv/>
           </PageContainer>
       </ThemeProvider>
 
