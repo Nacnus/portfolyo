@@ -1,5 +1,4 @@
 .carousel-container {
-    width: 80%;
     margin: 20px auto 20px auto;
 }
 
@@ -7,17 +6,8 @@
     height: 500px;
     object-fit: cover;
 }
-.carousel-control-prev-icon{
-    background-image:url('data:image/svg+xml;charset=UTF8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ff0000" viewBox="0 0 16 16"><path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>') !important;
-}
-.carousel-control-next-icon{
-    background-image: url('data:image/svg+xml;charset=UTF8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23808080" viewBox="0 0 16 16"><path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>') !important;
-}
-.carousel-control-prev:hover, .carousel-control-next:hover{
-    background-color: grey;
-}
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.7);  /* Yarı saydam siyah arka plan */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
     border-radius: 10px;
 }
