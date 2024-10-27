@@ -11,6 +11,10 @@ function Header() {
             title: 'Ana Sayfa'
         },
         {
+            section: 'aboutMe',
+            title: 'Hakkımda'
+        },
+        {
             section: 'projects',
             title: 'Projeler'
         },
@@ -18,10 +22,7 @@ function Header() {
             section: 'contact',
             title: 'İletişim'
         },
-        {
-            section: 'cv',
-            title: 'CV'
-        },
+
     ];
 
     const handleChange = (event, newValue) => {
