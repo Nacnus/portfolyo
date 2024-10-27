@@ -3,13 +3,18 @@ import { Carousel } from 'react-bootstrap';
 import '../css/MyCarousel.css'
 import image1 from '../images/image1.png';
 import image2 from '../images/image2.png';
+import {CiCircleChevLeft, CiCircleChevRight} from "react-icons/ci";
 
 
 
 function MyCarousel() {
     return (
         <div className="carousel-container" id='projects'>
-            <Carousel>
+            <Carousel
+                prevIcon={<CiCircleChevLeft color='#FF9100FF' fontSize='300%' />}
+                nextIcon={<CiCircleChevRight color='#FF9100FF' fontSize='300%'  />}
+                className="mt-5"
+            >
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
