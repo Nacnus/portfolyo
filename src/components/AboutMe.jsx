@@ -1,15 +1,9 @@
 import React from 'react';
 import {Button, Card, CardActions, CardContent, IconButton, Typography} from "@mui/material";
 import { IoMdDownload } from "react-icons/io";
-
+import cvFile from "../Cv/Cv.pdf"
 
 function AboutMe() {
-    const onDownload = () => {
-        const link = document.createElement("a");
-        link.download = `Yusuf Can Sun.pdf`;
-        link.href = "../Cv/Cv.pdf";
-        link.click();
-    };
     return (
         <Card id='aboutMe' elevation={4}>
             <CardContent>
@@ -53,8 +47,9 @@ function AboutMe() {
 
             <CardActions className='d-flex justify-content-center mb-4'>
                 <Button
-                    onClick={onDownload}
-                    component='label'
+                    href={cvFile}
+                    download="Yusuf Can Sun.pdf"
+                    component='a'
                     variant="contained"
                     color='secondary'
                     size='large'
