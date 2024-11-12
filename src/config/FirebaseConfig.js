@@ -1,6 +1,7 @@
-
 import { initializeApp } from "firebase/app";
 import {getFirestore, collection,addDoc} from "firebase/firestore";
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
+
 
 
 // Your web app's Firebase configuration
@@ -16,6 +17,10 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
+
+export { auth, provider };
 
 export async function submitContactForm(name, mail, message) {
         await addDoc(collection(db, "contactForm"), {
