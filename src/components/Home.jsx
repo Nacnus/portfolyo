@@ -8,7 +8,10 @@ import { IoIosMail } from "react-icons/io";
 
 function Home() {
     return (
-        <Card id='home' elevation={3} sx={{
+        <Card id='home'
+              elevation={3}
+              className={'rounded-bottom-4 rounded-top-0'}
+              sx={{
             backgroundImage: `url(${bgImage})`,
             height: '80dvh',
             backgroundSize: 'cover',

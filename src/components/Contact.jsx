@@ -8,7 +8,7 @@ function Contact() {
     const [hoveredButton, setHoveredButton] = useState(null);
 
     return (
-        <Card id='contact' variant="outlined" className={'mb-5 rounded-4'}>
+        <Card id='contact' className={'mb-5 rounded-4'} elevation={4}>
             <CardContent>
                 <Typography
                     variant="h2"

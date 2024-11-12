@@ -1,11 +1,11 @@
 import React from 'react';
-import {Button, Card, CardActions, CardContent, IconButton, Typography} from "@mui/material";
+import {Button, Card, CardActions, CardContent, Typography} from "@mui/material";
 import { IoMdDownload } from "react-icons/io";
 import cvFile from "../Cv/Cv.pdf"
 
 function AboutMe() {
     return (
-        <Card id='aboutMe' elevation={4}>
+        <Card id='aboutMe' elevation={4} className={'rounded-4'}>
             <CardContent>
                 <Typography
                     variant="h2"
@@ -45,12 +45,13 @@ function AboutMe() {
                 </Typography>
             </CardContent>
 
-            <CardActions className='d-flex justify-content-center mb-4'>
+            <CardActions className='d-flex justify-content-center mb-4 '>
                 <Button
                     href={cvFile}
                     download="Yusuf Can Sun.pdf"
                     component='a'
                     variant="contained"
+                    className={'rounded-4'}
                     color='secondary'
                     size='large'
                     startIcon={<IoMdDownload />}

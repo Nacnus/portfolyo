@@ -9,7 +9,7 @@ import {Card} from "@mui/material";
 
 function MyCarousel() {
     return (
-        <Card className="carousel-container" id='projects' elevation={5}>
+        <Card className="carousel-container rounded-4" id='projects' elevation={5}>
             <Carousel
                 prevIcon={<CiCircleChevLeft color='#FF9100FF' fontSize='300%' />}
                 nextIcon={<CiCircleChevRight color='#FF9100FF' fontSize='300%'  />}
