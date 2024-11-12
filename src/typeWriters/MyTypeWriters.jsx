@@ -12,7 +12,6 @@ function MyTypeWriters() {
                 <Typewriter
                     words={titles}
                     loop={true}
-                    cursorBlinking={false}
                     cursor
                     typeSpeed={30}
                     deleteSpeed={30}
