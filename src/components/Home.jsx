@@ -11,10 +11,9 @@ function Home() {
         <Card id='home' elevation={3} sx={{
             backgroundImage: `url(${bgImage})`,
             height: '80dvh',
-            marginTop: '8dvh',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            position: 'relative',
+            position: 'relative'
         }}>
             <PageContainer>
                 <CardContent sx={{
