@@ -7,9 +7,10 @@ import MyCarousels from "./carousel/MyCarousels.jsx";
 import PageContainer from "./container/PageContainer.jsx";
 import AboutMe from "./components/AboutMe.jsx";
 
+
 const theme = createTheme({
     palette: {
-        primary: { main: "#FF6500", contrastText: "#000000" },
+        primary: { main: "#FF6500", contrastText: "#ffffff" },
         secondary: { main: "#0B192C", contrastText: "#fff" },
     },
     typography: {
@@ -19,15 +20,16 @@ const theme = createTheme({
 
 function App() {
   return (
-      <ThemeProvider theme={theme}>
-          <Header/>
-          <Home/>
-          <PageContainer className="content">
-              <AboutMe/>
-              <MyCarousels/>
-              <Contact/>
-          </PageContainer>
-      </ThemeProvider>
+          <ThemeProvider theme={theme}>
+              <Header/>
+              <Home/>
+              <PageContainer className="content">
+                  <AboutMe/>
+                  <MyCarousels/>
+                  <Contact/>
+              </PageContainer>
+          </ThemeProvider>
+
 
   )
 }
