@@ -20,7 +20,7 @@ const db = getFirestore(app);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
-export { auth, provider };
+export { auth, provider,db };
 
 export async function submitContactForm(name, mail, message) {
         await addDoc(collection(db, "contactForm"), {
