@@ -18,7 +18,7 @@ function Contact() {
                 >
                     İletişim
                 </Typography>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
 
                     {/* Mail Icon Button */}
                     <div
@@ -29,30 +29,36 @@ function Contact() {
                             flexDirection: 'column',
                             alignItems: 'center',
                             margin: '10px',
-                            filter: hoveredButton && hoveredButton !== 'mail' ? 'blur(2px)' : 'none',
+                            filter: hoveredButton && hoveredButton !== 'mail' ? 'blur(1px)' : 'none',
                             transition: 'filter 0.3s',
                         }}
                     >
-                        <div style={{
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            width: '60px',
-                            height: '60px',
-                            borderRadius: '50%',
-                            backgroundColor: hoveredButton === 'mail' ? 'rgba(0, 0, 0, 0.7)' : 'rgba(0, 0, 0, 0.5)',
-                            transition: 'background-color 0.3s',
-                        }}>
-                            <IconButton aria-label="mail" size='large' href='mailto:yusufcansun6@gmail.com'>
-                                <IoIosMail color='white' />
+                        <div
+                            style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                width: '60px',
+                                height: '60px',
+                                borderRadius: '50%',
+                                backgroundColor: hoveredButton === 'mail' ? 'rgba(0, 0, 0, 1)' : 'rgba(0, 0, 0, 0.5)',
+                                transition: 'background-color 0.3s, transform 0.3s',
+                                transform: hoveredButton === 'mail' ? 'scale(1.2)' : 'scale(1)',
+                            }}
+                        >
+                            <IconButton aria-label="mail" size="large" href="mailto:yusufcansun6@gmail.com">
+                                <IoIosMail color="white"/>
                             </IconButton>
                         </div>
-                        <Typography component='a' href='mailto:yusufcansun6@gmail.com' style={{ marginTop: '8px',textDecoration:'none', color: hoveredButton === 'mail' ? '#000' : '#555' }}>
+                        <Typography component='a' href='mailto:yusufcansun6@gmail.com' style={{
+                            marginTop: '8px',
+                            textDecoration: 'none',
+                            color: hoveredButton === 'mail' ? '#000' : '#555'
+                        }}>
                             yusufcansun6@gmail.com
                         </Typography>
                     </div>
 
-                    {/* LinkedIn Icon Button */}
                     <div
                         onMouseEnter={() => setHoveredButton('linkedin')}
                         onMouseLeave={() => setHoveredButton(null)}
@@ -61,36 +67,45 @@ function Contact() {
                             flexDirection: 'column',
                             alignItems: 'center',
                             margin: '10px',
-                            filter: hoveredButton && hoveredButton !== 'linkedin' ? 'blur(2px)' : 'none',
+                            filter: hoveredButton && hoveredButton !== 'linkedin' ? 'blur(1px)' : 'none',
                             transition: 'filter 0.3s',
                         }}
                     >
-                        <div style={{
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            width: '60px',
-                            height: '60px',
-                            borderRadius: '50%',
-                            backgroundColor: hoveredButton === 'linkedin' ? 'rgba(0, 0, 0, 0.7)' : 'rgba(0, 0, 0, 0.5)',
-                            transition: 'background-color 0.3s',
-                        }}>
+                        <div
+                            style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                width: '60px',
+                                height: '60px',
+                                borderRadius: '50%',
+                                backgroundColor: hoveredButton === 'linkedin' ? 'rgba(0, 0, 0, 1)' : 'rgba(0, 0, 0, 0.5)',
+                                transition: 'background-color 0.3s, transform 0.3s', // Add transition for transform
+                                transform: hoveredButton === 'linkedin' ? 'scale(1.2)' : 'scale(1)', // Add scale effect on hover
+                            }}
+                        >
                             <IconButton
                                 aria-label="linkedIn"
-                                size='large'
-                                href='https://www.linkedin.com/in/yusufcansun/'>
-                                <FaLinkedinIn color='white' />
+                                size="large"
+                                href="https://www.linkedin.com/in/yusufcansun/"
+                            >
+                                <FaLinkedinIn color="white"/>
                             </IconButton>
                         </div>
-                        <Typography component='a' href='https://www.linkedin.com/in/yusufcansun/' style={{ marginTop: '8px',textDecoration:'none', color: hoveredButton === 'linkedin' ? '#000' : '#555' }}>
-                            linkedin.com/in/yusufcansun/
-                        </Typography>
-                    </div>
+                    <Typography component='a' href='https://www.linkedin.com/in/yusufcansun/' style={{
+                        marginTop: '8px',
+                        textDecoration: 'none',
+                        color: hoveredButton === 'linkedin' ? '#000' : '#555'
+                    }}>
+                        linkedin.com/in/yusufcansun/
+                    </Typography>
                 </div>
-            </CardContent>
-            <ContactForm/>
-        </Card>
-    );
+            </div>
+        </CardContent>
+    <ContactForm/>
+</Card>
+)
+    ;
 }
 
 export default Contact;
