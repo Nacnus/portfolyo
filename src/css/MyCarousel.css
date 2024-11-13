@@ -1,12 +1,13 @@
 .carousel-container {
     margin: 20px auto 20px auto;
+    border-radius: 17px !important;
 }
 
 .carousel-container img {
     height: 500px;
     object-fit: cover;
+    border-radius: 17px !important;
 }
-/* custom-styles.css */
 .carousel-caption-custom {
     background-color: rgba(0, 0, 0, 0.7); /* Siyah, %70 opaklık */
     padding: 10px 20px; /* İç boşluk */
