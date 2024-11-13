@@ -33,11 +33,13 @@ function Header() {
             const scrollPosition = window.scrollY;
             headers.forEach((header, index) => {
                 const section = document.getElementById(header.section);
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.offsetHeight;
+                if (section) {
+                    const sectionTop = section.offsetTop - 120;
+                    const sectionHeight = section.offsetHeight;
 
-                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                    setValue(index);
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        setValue(index);
+                    }
                 }
             });
         };
@@ -49,7 +51,7 @@ function Header() {
     return (
         <div className='header'>
             <Container maxWidth="lg" sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <a href={"#home"} className="left-text" style={{textDecoration: 'none', color: 'inherit', cursor: 'pointer'}}>
+                <a href={"#home"} className="left-text" style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }}>
                     Yusuf Can Sun
                 </a>
                 <div>
@@ -58,7 +60,7 @@ function Header() {
                         onChange={handleChange}
                         textColor="inherit"
                         indicatorColor="secondary"
-                        sx={{paddingTop:'12px'}}
+                        sx={{ paddingTop: '12px' }}
                     >
                         {headers.map((header) => (
                             <Tab key={header.section} label={header.title} href={`#${header.section}`} />
