@@ -12,9 +12,9 @@
     background-color: rgba(0, 0, 0, 0.7); /* Siyah, %70 opaklık */
     padding: 10px 20px; /* İç boşluk */
     border-radius: 5px; /* Kenarları yuvarlat */
-    max-width: 40%; /* Genişliği kontrol et */
+    max-width: 70%; /* Genişliği kontrol et */
     color: #fff; /* Yazı rengi */
     margin: 0 auto; /* Ortalamak için */
-    text-align: center; /* Metni ortalamak için */
+    text-align: left ; /* Metni ortalamak için */
 }
 
