@@ -29,7 +29,6 @@ function Contact() {
                             flexDirection: 'column',
                             alignItems: 'center',
                             margin: '10px',
-                            filter: hoveredButton && hoveredButton !== 'mail' ? 'blur(1px)' : 'none',
                             transition: 'filter 0.3s',
                         }}
                     >
@@ -50,8 +49,13 @@ function Contact() {
                                 <IoIosMail color="white"/>
                             </IconButton>
                         </div>
+                        <Typography component="div" variant="h5" style={{
+                            marginTop: '8px'
+                        }}
+                                >
+                           E-Posta
+                        </Typography>
                         <Typography component='a' href='mailto:yusufcansun6@gmail.com' style={{
-                            marginTop: '8px',
                             textDecoration: 'none',
                             color: hoveredButton === 'mail' ? '#000' : '#555'
                         }}>
@@ -67,7 +71,6 @@ function Contact() {
                             flexDirection: 'column',
                             alignItems: 'center',
                             margin: '10px',
-                            filter: hoveredButton && hoveredButton !== 'linkedin' ? 'blur(1px)' : 'none',
                             transition: 'filter 0.3s',
                         }}
                     >
@@ -92,8 +95,13 @@ function Contact() {
                                 <FaLinkedinIn color="white"/>
                             </IconButton>
                         </div>
+                        <Typography component="div" variant="h5" style={{
+                            marginTop: '8px'
+                        }}
+                        >
+                            LinkedIn
+                        </Typography>
                     <Typography component='a' href='https://www.linkedin.com/in/yusufcansun/' style={{
-                        marginTop: '8px',
                         textDecoration: 'none',
                         color: hoveredButton === 'linkedin' ? '#000' : '#555'
                     }}>
