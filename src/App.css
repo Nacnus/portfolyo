@@ -6,3 +6,6 @@ html{
   scroll-behavior: smooth;
   scroll-padding-top:10dvh;
 }
+:root {
+  --bs-font-sans-serif: 'Poppins', sans-serif;
+}

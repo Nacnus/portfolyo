@@ -14,7 +14,7 @@ const theme = createTheme({
         secondary: { main: "#0B192C", contrastText: "#fff" },
     },
     typography: {
-        fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+        fontFamily: 'Poppins,sans-serif',
     },
 });
 
