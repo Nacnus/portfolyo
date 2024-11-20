@@ -29,7 +29,7 @@ function Home() {
                     marginTop: '200px',
                     position: 'relative',
                     zIndex: 1,
-                    padding: '0 20px' // Add padding for better mobile spacing
+                    padding: '0 20px'
                 }}>
                     <Typography
                         gutterBottom
@@ -38,28 +38,28 @@ function Home() {
                         color='white'
                         fontWeight='bolder'
                         sx={{
-                            textAlign: 'center', // Center align for mobile
-                            fontFamily: '"Montserrat", sans-serif' // Montserrat font family
+                            textAlign: 'center',
+                            fontFamily: '"Montserrat", sans-serif'
                         }}
                     >
                         Merhaba
                     </Typography>
                     <div style={{
                         display: 'flex',
-                        flexDirection: isMobile ? 'column' : 'row', // Mobilde alt alta, masaüstünde yan yana
-                        alignItems: 'center',  // Center align for mobile and desktop
+                        flexDirection: isMobile ? 'column' : 'row',
+                        alignItems: 'center',
                         textAlign: 'center',
                     }}>
                         <Typography variant='h2' color='white' sx={{
-                            fontFamily: '"Montserrat", sans-serif' // Montserrat font family for 'Ben'
+                            fontFamily: '"Montserrat", sans-serif'
                         }}>
-                            Ben
+                            Ben&nbsp;
                         </Typography>
                         <Typography variant='h2' fontWeight='500' color='white' sx={{
                             marginTop: isMobile ? 2 : 0,
-                            fontFamily: '"Montserrat", sans-serif' // Montserrat font family for typewriter
+                            fontFamily: '"Montserrat", sans-serif'
                         }}>
-                            {/* MyTypeWriters bileşeni burada animasyonlu yazıyı gösterir */}
+
                             <MyTypeWriters />
                         </Typography>
                     </div>
