@@ -9,3 +9,15 @@ html{
 :root {
   --bs-font-sans-serif: 'Poppins', sans-serif;
 }
+
+@media (max-width: 768px) {
+  #contact div {
+    flex-direction: column !important;
+  }
+  .contact-heading {
+    text-align: center !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
